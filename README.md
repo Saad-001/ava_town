@@ -1,4 +1,9 @@
 <h1>Ava Town</h1>
+<!-- ![Ava Town Home page](https://github.com/Saad-001/ava_town/blob/main/avatarHomePage.png) -->
+<img
+  src="https://github.com/Saad-001/ava_town/blob/main/avatarHomePage.png"
+  alt="Ava Town Home page"
+  style="display: inline-block; margin: 0 auto; max-width: 500px; max-height: 500px;">
 <h2>Setup</h2>
 <p>To run this project on your local machine, clone the repository first.</p><h5>Steps</h5><ul>
 <li>
