@@ -1,3 +1,4 @@
+import "animate.css";
 import React from "react";
 import Review from "../review/Review";
 import Table from "../table/Table";
@@ -28,7 +29,9 @@ const Tabs = ({ avatarData }) => {
               <a
                 href="#link1"
                 className={`text-sm font-bold rounded-sm uppercase px-5 py-3 block leading-normal
-                  ${openTab === 1 ? "text-white" : "text-[#601e87]"}`}
+                  ${
+                    openTab === 1 ? "text-white bg-[#601e87]" : "text-[#601e87]"
+                  }`}
                 style={openTab === 1 ? bg_color : bg_white}
                 onClick={(e) => {
                   e.preventDefault();
@@ -76,7 +79,14 @@ const Tabs = ({ avatarData }) => {
           <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 border-2 border-[#601e87] rounded-sm">
             <div className="px-16 py-10 flex-auto">
               <div className="tab-content tab-space">
-                <div className={openTab === 1 ? "block" : "hidden"} id="link1">
+                <div
+                  className={
+                    openTab === 1
+                      ? "block animate__animated animate__fadeIn"
+                      : "hidden"
+                  }
+                  id="link1"
+                >
                   <h1 className="text-3xl text-[#601e87] font-semibold mb-5">
                     Avatar Full Description
                   </h1>
@@ -96,13 +106,27 @@ const Tabs = ({ avatarData }) => {
                     vitae tellus.
                   </p>
                 </div>
-                <div className={openTab === 2 ? "block" : "hidden"} id="link2">
+                <div
+                  className={
+                    openTab === 2
+                      ? "block animate__animated animate__fadeIn"
+                      : "hidden"
+                  }
+                  id="link2"
+                >
                   <h1 className="text-3xl text-[#601e87] font-semibold mb-5">
                     Specification
                   </h1>
                   <Table avatarData={avatarData} />
                 </div>
-                <div className={openTab === 3 ? "block" : "hidden"} id="link3">
+                <div
+                  className={
+                    openTab === 3
+                      ? "block animate__animated animate__fadeIn"
+                      : "hidden"
+                  }
+                  id="link3"
+                >
                   <Review />
                 </div>
               </div>

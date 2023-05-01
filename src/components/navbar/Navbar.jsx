@@ -39,19 +39,19 @@ const Navbar = () => {
         </button>
       </div>
       <div className="flex justify-around gap-3">
-        <div className="flex justify-self-center text-white h-10 p-2 bg-gray-800 rounded-md relative">
+        <div className="flex justify-self-center text-white h-10 p-2 bg-gray-800 rounded-md relative cursor-pointer">
           <span className="absolute -right-1 -top-2 rounded-full bg-red-600 w-4 h-4 top right p-0 m-0 text-white font-mono text-sm  leading-tight text-center">
             3
           </span>
           <IoNotificationsOutline className="text-2xl" />
         </div>
-        <div className="flex justify-self-center-center text-white h-10 p-2 bg-gray-800 rounded-md relative">
+        <div className="flex justify-self-center-center text-white h-10 p-2 bg-gray-800 rounded-md relative cursor-pointer">
           <span className="absolute -right-1 -top-2 rounded-full bg-red-600 w-4 h-4 top right p-0 m-0 text-white font-mono text-sm  leading-tight text-center">
             1
           </span>
           <HiOutlineShoppingCart className="text-2xl" />
         </div>
-        <div className="bg-white flex justify-self-cente h-10 p-2 rounded-md">
+        <div className="bg-white flex justify-self-cente h-10 p-2 rounded-md cursor-pointer">
           <img
             src={user_avatar}
             className="h-6 rounded-full"

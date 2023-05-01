@@ -233,13 +233,13 @@ const AvatarDetailsPage = () => {
             <div className="flex items-center gap-3 my-5">
               <button
                 style={bg_color}
-                className="text-lg rounded-sm px-3 py-2 text-white"
+                className="text-lg rounded-sm px-3 py-2 text-white hover:scale-110 hover:shadow-xl transform transition duration-500"
               >
                 Add To Cart
               </button>
               <button
                 style={bg_color}
-                className="text-lg rounded-sm px-3 py-2 text-white"
+                className="text-lg rounded-sm px-3 py-2 text-white hover:scale-110 hover:shadow-xl transform transition duration-500"
               >
                 Buy Now
               </button>
