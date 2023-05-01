@@ -1,20 +1,6 @@
 <h1>Ava Town</h1>
-<hr><h2>Technologies Used</h2>
-<hr><ul>
-<li>JavaScript</li>
-</ul><ul>
-<li>React</li>
-</ul><ul>
-<li>Tailwind CSS</li>
-</ul><ul>
-<li>Vite</li>
-</ul><h2>Features</h2>
-<hr><ul>
-<li>Avatars Home Page</li>
-</ul><ul>
-<li>Avatar Details Page</li>
-</ul><h2>Setup</h2>
-<hr><p>To run this project on your local machine, clone the repository.</p><h5>Steps</h5><ul>
+<hr><h2>Setup</h2>
+<hr><p>To run this project on your local machine, clone the repository first.</p><h5>Steps</h5><ul>
 <li>
 <ol>
 <li>Clone the repository <code>https://github.com/Saad-001/ava_town.git</code></li>
