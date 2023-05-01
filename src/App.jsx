@@ -1,20 +1,40 @@
 import { Route, Routes } from "react-router-dom";
-import AllAvatar from "./allAvatarPage/AllAvatar";
-import Navbar from "./components/navbar/Navbar";
+import AllAvatarPage from "./Pages/AllAvatarPage";
+import AvatarDetailsPage from "./Pages/AvatarDetailsPage";
 
 function App() {
   return (
-    <div className="">
-      <Navbar />
+    <>
       <Routes>
-        <Route path="/" element={<AllAvatar />} />
-        <Route path="/fullAvatar" element={<AllAvatar />} />
-        <Route path="/fullAvatar/humanBased" element={<AllAvatar />} />
-        <Route path="/fullAvatar/humanBased/male" element={<AllAvatar />} />
-        <Route path="/fullAvatar/humanBased/female" element={<AllAvatar />} />
-        <Route path="/fullAvatar/humanBased/unisex" element={<AllAvatar />} />
+        <Route path="/" element={<AllAvatarPage />} />
+        <Route path="/fullAvatar" element={<AllAvatarPage />} />
+        <Route path="/fullAvatar/humanBased" element={<AllAvatarPage />} />
+        <Route path="/fullAvatar/humanBased/male" element={<AllAvatarPage />} />
+        <Route
+          path="/fullAvatar/humanBased/female"
+          element={<AllAvatarPage />}
+        />
+        <Route
+          path="/fullAvatar/humanBased/unisex"
+          element={<AllAvatarPage />}
+        />
+
+        <Route path="/:id" element={<AvatarDetailsPage />} />
+        <Route path="/fullAvatar/:id" element={<AvatarDetailsPage />} />
+        <Route
+          path="/fullAvatar/humanBased/:id"
+          element={<AvatarDetailsPage />}
+        />
+        <Route
+          path="/fullAvatar/humanBased/male/:id"
+          element={<AvatarDetailsPage />}
+        />
+        <Route
+          path="/fullAvatar/humanBased/female/:id"
+          element={<AvatarDetailsPage />}
+        />
       </Routes>
-    </div>
+    </>
   );
 }
 

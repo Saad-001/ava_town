@@ -12,10 +12,10 @@ const Category = () => {
     }
   };
 
-  const handleOpenHuman = (e) => {
-    console.log(e.target.innerText);
+  const handleOpenHuman = () => {
     setOpenHuman(!openHuman);
   };
+
   return (
     <>
       <ul className="list-inside pl-4 font-semibold">
@@ -38,7 +38,7 @@ const Category = () => {
             className={({ isActive }) =>
               isActive ? "underline" : "no-underline"
             }
-            onClick={(e) => handleOpenHuman(e)}
+            onClick={handleOpenHuman}
           >
             Human based
           </NavLink>

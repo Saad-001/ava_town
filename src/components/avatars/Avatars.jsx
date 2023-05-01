@@ -30,11 +30,12 @@ const Avatars = ({ avatarData }) => {
     if (!categroy) {
       newAvatarData = avatarData.slice(startIndex, endIndex);
       setNewAvatarData(newAvatarData);
+      setDataLength(avatarData.length);
     }
 
     let filters = location.pathname.split("/");
 
-    if (filters.length > 1) {
+    if (filters.length > 2) {
       if (filters.length <= 3) {
         setGender("");
       }

@@ -9,7 +9,7 @@ import {
 
 const Sidebar = () => {
   return (
-    <div className="w-1/5 pl-1">
+    <div className="w-1/5 pl-2">
       <div>
         <h3 className="text-xl font-semibold">Category</h3>
         <Category />

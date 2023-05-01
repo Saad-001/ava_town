@@ -1,6 +1,7 @@
 import { CiSearch } from "react-icons/ci";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { IoNotificationsOutline } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 import brand_logo from "../../assets/Logo/logo_avatown_manual_1_basi_inverse.png";
 import user_avatar from "../../assets/Logo/user_avatar.png";
 
@@ -21,12 +22,12 @@ const Navbar = () => {
         <img className="h-14" src={brand_logo} alt="ava_town brand logo" />
       </div>
       <div className="w-2/6 p-1 xl:pl-8">
-        <a
-          href=""
+        <NavLink
+          to="/"
           className="text-2xl align-middle text-white underline underline-offset-8"
         >
           Go To Marketpage
-        </a>
+        </NavLink>
       </div>
       <div className="relative w-2/6">
         <input
