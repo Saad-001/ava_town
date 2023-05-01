@@ -1,6 +1,6 @@
 <h1>Ava Town</h1>
-<hr><h2>Setup</h2>
-<hr><p>To run this project on your local machine, clone the repository first.</p><h5>Steps</h5><ul>
+<h2>Setup</h2>
+<p>To run this project on your local machine, clone the repository first.</p><h5>Steps</h5><ul>
 <li>
 <ol>
 <li>Clone the repository <code>https://github.com/Saad-001/ava_town.git</code></li>
