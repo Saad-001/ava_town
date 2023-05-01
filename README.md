@@ -1,5 +1,5 @@
 <h1>Ava Town</h1>
-<!-- ![Ava Town Home page](https://github.com/Saad-001/ava_town/blob/main/avatarHomePage.png) -->
+<a href="https://ava-town.netlify.app/" target="_blank">Live</a>
 <img
   src="https://github.com/Saad-001/ava_town/blob/main/avatarHomePage.png"
   alt="Ava Town Home page"
