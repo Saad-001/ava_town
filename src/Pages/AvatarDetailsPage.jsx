@@ -18,7 +18,7 @@ const AvatarDetailsPage = () => {
   const [copied, setCopied] = useState(false);
   const location = useLocation();
   const paths = location.pathname.split("/");
-  console.log(paths);
+
   const params = useParams();
   const { id } = params;
   const {
