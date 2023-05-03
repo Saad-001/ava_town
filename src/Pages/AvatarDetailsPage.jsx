@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 import { HiOutlineHeart } from "react-icons/hi";
 import { useLocation, useParams } from "react-router-dom";
@@ -8,6 +8,7 @@ import copy_icon from "../assets/Logo/copy_icon.png";
 import MyImageGallery from "../components/imageGallery/MyImageGallery";
 import Layout from "../components/layout/Layout";
 import Tabs from "../components/tab/Tabs";
+import cartCountContext from "../context/cartCountContext";
 import data from "../data/data";
 
 const AvatarDetailsPage = () => {
@@ -16,6 +17,7 @@ const AvatarDetailsPage = () => {
   const [heartColor, setHeartColor] = useState(false);
   const [showCopyBtn, setShowCopyBtn] = useState(false);
   const [copied, setCopied] = useState(false);
+  const { setCartCount } = useContext(cartCountContext);
   const location = useLocation();
   const paths = location.pathname.split("/");
 
@@ -58,7 +60,9 @@ const AvatarDetailsPage = () => {
     setAvatarData(avatar[0]);
   }, [id]);
 
-  console.log(avatarData);
+  const handleAddToCart = () => {
+    setCartCount((prevCount) => prevCount + 1);
+  };
 
   const handleSetColor = () => {
     setWished(!wished);
@@ -234,6 +238,7 @@ const AvatarDetailsPage = () => {
               <button
                 style={bg_color}
                 className="text-lg rounded-sm px-3 py-2 text-white hover:scale-110 hover:shadow-xl transform transition duration-500"
+                onClick={handleAddToCart}
               >
                 Add To Cart
               </button>
