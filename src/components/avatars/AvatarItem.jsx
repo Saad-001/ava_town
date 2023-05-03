@@ -40,17 +40,14 @@ const AvatarItem = ({ info }) => {
   };
 
   return (
-    <div>
-      <Link
-        className="relative"
-        to={`${location.pathname !== "/" ? path + id : id}`}
-      >
+    <div className="relative">
+      <Link to={`${location.pathname !== "/" ? path + id : id}`}>
         <img
           alt="Avatar image"
           src={img}
           className="h-64 w-full object-cover sm:h-72 rounded-md"
         />
-        <button className="absolute flex items-center p-1 justify-around top-3 right-3 w-14 h-6 text-white text-lg rounded-md bg-[#531d868f]">
+        <button className="absolute flex items-center p-1 z-10 justify-around top-3 right-3 w-14 h-6 text-white text-lg rounded-md bg-[#531d868f]">
           <MdOutlineAddShoppingCart />
           <span className="text-sm font-semibold">Add</span>
         </button>
