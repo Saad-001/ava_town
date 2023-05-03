@@ -8,7 +8,7 @@
 <p>To run this project on your local machine, clone the repository first.</p><h5>Steps</h5><ul>
 <li>
 <ol>
-<li>Clone the repository <code>https://github.com/Saad-001/ava_town.git</code></li>
+<li>Clone the repository <code>git clone https://github.com/Saad-001/ava_town.git</code></li>
 </ol>
 </li>
 </ul><ul>
